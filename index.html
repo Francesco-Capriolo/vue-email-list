@@ -30,8 +30,8 @@
             <div class="row p-5 justify-content-center">
                 <div class="col-12 text-center mb-5">
                     <h2>Scegli un email che ti piace</h2>
-                    <button class="btn btn-primary" @click="listEmail">click for Email</button>
-                    <p v-for="email in result">{{email}}</p>
+                    <button class="btn btn-primary my-2" @click="listEmail">click for Email</button>
+                    <p v-for="email in result" v-show="result.length === 10" class="pt-2">{{email}}</p>
                 </div>
                 <div class="col-12 col-md-6 text-center bg-light">
 
